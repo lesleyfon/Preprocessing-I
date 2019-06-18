@@ -170,8 +170,9 @@ body {
   height: 300px;
 }
 .container .jumbotron h2 {
-  font-family: 'Courier New', Courier, monospace;
+  font-family: 'Indie Flower', cursive;
   font-size: 300%;
+  font-weight: bold;
 }
 .container .jumbotron h5 {
   font-size: 150%;
@@ -184,7 +185,12 @@ body {
 }
 .container .jumbotron p {
   font-size: large;
-  line-height: 60px;
+  line-height: 25px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+.container .jumbotron p strong {
+  font-weight: bold;
 }
 .container .jumbotron button:focus {
   outline: 0;
@@ -241,6 +247,7 @@ body {
 }
 .container .third-section table {
   width: 100%;
+  margin-bottom: 25px;
 }
 .container .third-section table thead {
   border-bottom: 1px solid lightgray;
@@ -252,6 +259,7 @@ body {
 }
 .container .third-section table tbody {
   padding-left: 5px ;
+  margin-bottom: 25px;
 }
 .container .third-section table tbody tr:nth-child(odd) {
   background: #f2f2f2;
@@ -268,6 +276,14 @@ body {
 .container footer {
   text-align: center;
   height: 70px;
+  background-color: #808080;
+  color: #e9ecef;
+  max-width: 870px;
+  margin: 0 auto;
+  display: flex;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
 }
 .container footer h3 {
   vertical-align: middle;

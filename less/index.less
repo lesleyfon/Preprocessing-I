@@ -3,7 +3,13 @@
    v2.0 | 20110126
    License: none (public domain)
 */
-
+//Center 
+.center(){
+	display: flex;
+	align-content: center;
+	align-items: center;
+	justify-content: center;
+}
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -95,10 +101,11 @@ html, body {
 			height: 300px;
 		}
 		h2{
-			font-family: 'Courier New', Courier, monospace;
+			// font-family: 'Courier New', Courier, monospace;
+			font-family: 'Indie Flower', cursive;
 			font-size: 300%;
+			font-weight: bold;
 		}
-
 		h5{
 			font-size: 150%;
 			line-height: 50px;
@@ -112,7 +119,12 @@ html, body {
 
 		p{
 			font-size: large;
-			line-height: 60px
+			line-height: 25px;
+			margin-bottom: 10px;
+			text-align: center;
+			strong{
+				font-weight: bold;
+			}
 		}
 		button:focus{outline: 0;}
 		button{
@@ -171,7 +183,7 @@ html, body {
 		max-width: 870px;
 		table{
 			width: 100%;
-			
+			margin-bottom:25px; ;
 			thead{
 				border-bottom: 1px solid lightgray;
 				border-top: 1px solid lightgray;
@@ -185,6 +197,7 @@ html, body {
 			}
 			tbody{
 				padding-left:5px ;
+				margin-bottom: 25px; 
 				tr:nth-child(odd){
 					background: #f2f2f2;
 				}
@@ -205,6 +218,11 @@ html, body {
 	footer{
 		text-align: center;
 		height: 70px;
+		background-color: #808080;
+		color: #e9ecef;	
+		max-width: 870px;
+		margin: @margin-auto;
+		.center();
 		h3{
 			vertical-align: middle;
 			font-weight: bolder;
