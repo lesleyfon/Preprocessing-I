@@ -1,1 +1,292 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+}
+.container {
+  max-width: 900px;
+  border: 1px solid grey;
+  margin: 0 auto;
+}
+.container nav {
+  height: 70px;
+  margin-right: 14px;
+}
+.container nav ul {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 20px 0px;
+}
+.container nav ul li {
+  padding: 5px 5px 5px 10px ;
+}
+.container nav ul li a {
+  text-decoration: none;
+  font-family: "roboto slab";
+  font-weight: bold;
+  color: #24292e;
+}
+.container .jumbotron {
+  max-width: 870px;
+  margin: 0 auto;
+  background-color: #e9ecef;
+  padding: 25px;
+  border-radius: 5px;
+}
+.container .jumbotron .resume-image {
+  width: 37%;
+  height: 300px;
+}
+.container .jumbotron h2 {
+  font-family: 'Indie Flower', cursive;
+  font-size: 300%;
+  font-weight: bold;
+}
+.container .jumbotron h5 {
+  font-size: 150%;
+  line-height: 50px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.container .jumbotron hr {
+  background-color: grey;
+  height: 3px;
+}
+.container .jumbotron p {
+  font-size: large;
+  line-height: 25px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+.container .jumbotron p strong {
+  font-weight: bold;
+}
+.container .jumbotron button:focus {
+  outline: 0;
+}
+.container .jumbotron button {
+  padding: 14px;
+  width: 9.6875em;
+  background-color: #808080;
+  color: #e9ecef;
+  font-size: larger;
+  border-radius: 10px;
+  box-shadow: none;
+  margin-bottom: 50px;
+}
+.container .second-section {
+  margin: 0 auto;
+  max-width: 870px;
+  display: flex;
+  justify-content: space-between;
+}
+.container .second-section .left {
+  width: 45%;
+  margin: 40px 0px;
+}
+.container .second-section .left h3 {
+  font-size: large;
+  line-height: 60px;
+  font-weight: bolder;
+  font-size: 150%;
+}
+.container .second-section .left p {
+  font-size: large;
+  line-height: 25px;
+}
+.container .second-section .right {
+  width: 45%;
+  margin: 40px 0px;
+}
+.container .second-section .right table {
+  height: 100%;
+  width: 100%;
+}
+.container .second-section .right tr th {
+  vertical-align: middle;
+}
+.container .second-section .right tr td {
+  border: 1px solid lightgray;
+  vertical-align: middle;
+  padding-left: 20px;
+}
+.container .third-section {
+  margin: 0 auto;
+  max-width: 870px;
+}
+.container .third-section table {
+  width: 100%;
+  margin-bottom: 25px;
+}
+.container .third-section table thead {
+  border-bottom: 1px solid lightgray;
+  border-top: 1px solid lightgray;
+  background-color: #ffffff;
+}
+.container .third-section table thead tr td {
+  padding: 20px 0px;
+}
+.container .third-section table tbody {
+  padding-left: 5px ;
+  margin-bottom: 25px;
+}
+.container .third-section table tbody tr:nth-child(odd) {
+  background: #f2f2f2;
+}
+.container .third-section table tbody tr:nth-child(even) {
+  background: #ffff f;
+}
+.container .third-section table tbody tr {
+  border-bottom: 1px solid lightgray;
+}
+.container .third-section table tbody tr td {
+  padding: 20px 0px;
+}
+.container footer {
+  text-align: center;
+  height: 70px;
+  background-color: #808080;
+  color: #e9ecef;
+  max-width: 870px;
+  margin: 0 auto;
+  display: flex;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+}
+.container footer h3 {
+  vertical-align: middle;
+  font-weight: bolder;
+  margin-top: 29px;
+}
